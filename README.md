@@ -4,6 +4,8 @@ An educational web application that demonstrates a **hybrid list**: a large sort
 
 Built with **Python** and **Streamlit**.
 
+**Live demo:** [lista-hibrida-grupo1.streamlit.app](https://lista-hibrida-grupo1.streamlit.app/)
+
 > **Note:** the application interface is in Brazilian Portuguese.
 
 ## Features
