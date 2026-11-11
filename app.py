@@ -19,7 +19,6 @@ st.write(
     "e cauda não ordenada com busca sequencial."
 )
 
-# Manter os dados entre as interações
 if "lista" not in st.session_state:
     st.session_state.lista = ListaHibrida(semente=42)
 
@@ -29,7 +28,6 @@ if "resultado" not in st.session_state:
 lista = st.session_state.lista
 
 
-# Painel de informações
 st.subheader("Estado da estrutura")
 
 col1, col2, col3 = st.columns(3)
@@ -52,7 +50,6 @@ col3.metric(
 st.progress(len(lista.cauda) / 10)
 
 
-# Inserção
 st.divider()
 st.subheader("Inserir uma chave")
 
@@ -74,7 +71,6 @@ if st.button("Inserir chave"):
         st.warning(mensagem)
 
 
-# Busca
 st.divider()
 st.subheader("Buscar uma chave")
 
@@ -130,7 +126,6 @@ if resultado is not None:
     )
 
 
-# Visualização dos dados
 st.divider()
 st.subheader("Visualização das regiões")
 
@@ -172,7 +167,6 @@ with aba2:
         st.info("A cauda está vazia.")
 
 
-# Componentes e código correspondente
 st.divider()
 st.subheader("Componentes utilizados")
 
@@ -203,7 +197,6 @@ for nome, metodo in componentes.items():
         )
 
 
-# Reiniciar aplicação
 st.divider()
 
 if st.button("Reiniciar estrutura"):

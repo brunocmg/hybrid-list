@@ -51,7 +51,6 @@ class ListaHibrida:
         fim = len(self.regiao_ordenada) - 1
         iteracoes_binaria = 0
 
-        # Primeiro: busca binária
         while inicio <= fim:
             iteracoes_binaria += 1
             meio = (inicio + fim) // 2
@@ -74,7 +73,6 @@ class ListaHibrida:
             else:
                 inicio = meio + 1
 
-        # Segundo: busca sequencial na cauda
         iteracoes_sequencial = 0
 
         for indice, valor in enumerate(self.cauda):
