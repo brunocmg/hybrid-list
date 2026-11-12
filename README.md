@@ -41,7 +41,7 @@ Built with **Python** and **Streamlit**.
 Requires Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/brunocmg/lista-hibrida.git
+git clone https://github.com/brunocmg/hybrid-list.git
 cd lista-hibrida
 pip install -r requirements.txt
 streamlit run app.py
